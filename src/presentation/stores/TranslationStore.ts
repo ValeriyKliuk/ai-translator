@@ -91,4 +91,4 @@ export const TranslationStore = types
     };
   });
 
-export interface ITranslationStore extends Instance<typeof TranslationStore> {}
+export type ITranslationStore = Instance<typeof TranslationStore>;
