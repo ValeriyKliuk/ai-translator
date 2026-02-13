@@ -4,7 +4,7 @@ import type { Language } from '../../domain/entities/Translation';
 
 export class OllamaTranslationService implements ITranslationService {
   private ollama: Ollama;
-  private model = 'gemma:4b';
+  private model = 'translategemma:4b';
 
   constructor() {
     this.ollama = new Ollama({ host: 'http://localhost:11434' });
